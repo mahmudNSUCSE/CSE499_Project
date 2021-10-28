@@ -137,7 +137,7 @@ textarea {
 	 overflow: auto;
 }
 
-input[type=tel], input[type=url], input[type=password], input[type=text], input[type=email], input[type=reset], input[type=button], input[type=submit], button, textarea{
+input[type=tel], input[type=url], input[type=password], input[type=text], input[type=email], input[type=reset], input[type=button], input[type=submit], input[type=date], input[type=number], button, textarea{
      -webkit-appearance: none;
      -webkit-border-radius: 0;
 }
@@ -1099,7 +1099,7 @@ input.white[type=submit]:hover{
 #footer p.form-newsletter {
 	padding: 15px 0 40px;
 }
-.form-newsletter input[type=email] {
+.form-newsletter input[type=email],input[type=tel], input[type=url], input[type=password], input[type=text], input[type=password], input[type=date], input[type=number] {
 	width: 220px;
 	margin: 0 auto 15px;
 	padding: 18px 25px;
