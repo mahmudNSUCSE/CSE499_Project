@@ -3,6 +3,9 @@ import Typography from "@mui/material/Typography";
 import PythonLogo from "../images/python_logo.png";
 import CustomAppBar from "./CustomAppBar";
 import Button from "@mui/material/Button";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { signIn } from "../api/ApiRequestHandler";
 
 export default function IndexPageAnother() {
   return (

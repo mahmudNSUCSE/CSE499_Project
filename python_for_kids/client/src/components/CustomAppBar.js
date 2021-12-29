@@ -4,8 +4,9 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-
+import { useNavigate } from "react-router-dom";
 export default function CustomAppBar() {
+  const navigate = useNavigate();
   return (
     <Box>
       <AppBar
@@ -16,6 +17,9 @@ export default function CustomAppBar() {
       >
         <Toolbar>
           <Typography
+            onClick={() => {
+              navigate("/");
+            }}
             variant="h5"
             component="div"
             sx={{
@@ -29,6 +33,9 @@ export default function CustomAppBar() {
             Python For Kids
           </Typography>
           <Button
+            onClick={() => {
+              navigate("/aboutus");
+            }}
             variant="contained"
             sx={{
               color: "black",
@@ -45,6 +52,9 @@ export default function CustomAppBar() {
             About us
           </Button>
           <Button
+            onClick={() => {
+              navigate("/contact");
+            }}
             variant="contained"
             sx={{
               color: "black",

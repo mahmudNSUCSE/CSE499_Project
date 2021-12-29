@@ -16,3 +16,10 @@ export const signIn = ({ email, password }) => {
 export const signUp = (inputs) => {
   return axios.post("register/", inputs);
 };
+
+export const getUser = (token) => {
+  return axios.get(
+    "/user",
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+};
