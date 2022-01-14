@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import TeachingMaterials from "./components/TeachingMaterials";
 import VideoTutorialPage from "./components/VideoTutorialPage";
 import IndexPageAnother from "./components/IndexPageAnother";
+import QuizPage from "./components/QuizPage";
 import UserRedirectHomeRoute from "./routes/UserRedirectHomeRoute";
 import PrivateRoute from "./routes/PrivateRoute";
 function App() {
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route exact path="/video-tutorial" element={<PrivateRoute />}>
           <Route exact path="/video-tutorial" element={<VideoTutorialPage />} />
+        </Route>
+        <Route exact path="/quiz" element={<PrivateRoute />}>
+          <Route exact path="/quiz" element={<QuizPage />} />
         </Route>
 
         <Route>

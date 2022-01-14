@@ -190,7 +190,7 @@ export default function Home() {
             </Button>
             <Button
               onClick={() => {
-                navigate("/contact");
+                navigate("/quiz");
               }}
               variant="contained"
               sx={{

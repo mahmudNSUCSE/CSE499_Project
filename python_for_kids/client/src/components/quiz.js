@@ -1,0 +1,61 @@
+export const quiz = {
+  quizTitle: "Python Quiz For Kids",
+  quizSynopsis:
+    "The test contains 25 questions and there is no time limit. The test is just a nice way to see how much you know, or don't know, about Python.",
+  nrOfQuestions: "4",
+  questions: [
+    {
+      question: 'What is a correct syntax to output "Hello World" in Python?',
+      questionType: "text",
+      answerSelectionType: "single",
+      answers: [
+        'echo "Hello World"',
+        'print("Hello World")',
+        'p("Hello World")',
+        'echo("Hello World")',
+      ],
+      correctAnswer: "2",
+      messageForCorrectAnswer: "Correct answer. Good job.",
+      messageForIncorrectAnswer: "Incorrect answer. Please try again.",
+      point: "20",
+    },
+    {
+      question: "How do you insert COMMENTS in Python code?",
+      questionType: "text",
+      answerSelectionType: "single",
+      answers: [
+        "/*This is a comment*/",
+        "#This is a comment",
+        "//This is a comment",
+      ],
+      correctAnswer: "2",
+      messageForCorrectAnswer: "Correct answer. Good job.",
+      messageForIncorrectAnswer: "Incorrect answer. Please try again.",
+      point: "20",
+    },
+    {
+      question: "Which one is NOT a legal variable name?",
+      questionType: "text",
+      answerSelectionType: "single",
+      answers: ["Myvar", "my_var", "my-var", "_myvar"],
+      correctAnswer: "3",
+      messageForCorrectAnswer: "Correct answer. Good job.",
+      messageForIncorrectAnswer: "Incorrect answer. Please try again.",
+      point: "10",
+    },
+    {
+      question: "How do you create a variable with the numeric value 5?",
+      questionType: "text",
+      answerSelectionType: "single",
+      answers: [
+        "x = 5",
+        "x = int(5)",
+        "Both of the above",
+      ],
+      correctAnswer: "3",
+      messageForCorrectAnswer: "Correct answer. Good job.",
+      messageForIncorrectAnswer: "Incorrect answer. Please try again.",
+      point: "20",
+    },
+  ],
+};
